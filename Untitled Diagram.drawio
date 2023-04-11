@@ -1,0 +1,228 @@
+<mxfile host="app.diagrams.net" modified="2023-04-11T09:56:08.938Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="CPqPd0ZUpxazd98ucZ5q" version="21.1.5" type="github">
+  <diagram name="Page-1" id="_NuYFl7lWXJDQwEXWXTC">
+    <mxGraphModel dx="3021" dy="748" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PJumSltDaIIrHm_wcigh-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJumSltDaIIrHm_wcigh-7" target="PJumSltDaIIrHm_wcigh-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-7" value="App Delegate" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="364" y="35" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="PJumSltDaIIrHm_wcigh-34" target="PJumSltDaIIrHm_wcigh-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="200" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-13" value="Profile Coordinator" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="550" y="300" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-28" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;Protocol&lt;/i&gt;&lt;br&gt;&lt;b&gt;BaseCoordinator&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;var onFinish: (() -&amp;gt; Void)?&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;func start()&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="10" y="10" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PJumSltDaIIrHm_wcigh-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-33" value="AppCoordinator :&amp;nbsp; BaseCoordinator" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="264" y="110" width="300" height="210" as="geometry">
+            <mxRectangle x="264" y="130" width="240" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-34" value="var categoriesCoordinator: CategoriesCoordinator?&lt;br&gt;var profileCoordinator: ProfileCoordinator?&lt;br&gt;var cartCoordinator: CartCoordinator?" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PJumSltDaIIrHm_wcigh-33">
+          <mxGeometry y="40" width="300" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-42" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="PJumSltDaIIrHm_wcigh-33">
+          <mxGeometry y="90" width="300" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-36" value="+ start() {&lt;br&gt;&amp;nbsp; ...&lt;br&gt;&lt;div&gt;&amp;nbsp; self.categoriesCoordinator?.start()&lt;/div&gt;&lt;div&gt;&amp;nbsp; self.cartCoordinator?.start()&lt;/div&gt;&lt;div&gt;&amp;nbsp; self.profileCoordinator?.start()&lt;/div&gt;&amp;nbsp; ...&lt;br&gt;}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PJumSltDaIIrHm_wcigh-33">
+          <mxGeometry y="98" width="300" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-81" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;Protocol&lt;/i&gt;&lt;br&gt;&lt;b&gt;ViewAssemblerProtocol&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;func assemble() -&amp;gt; UIViewController&lt;/span&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-230" y="10" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-99" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="-1410" y="277" width="1160" height="710" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-97" value="Categories" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="PJumSltDaIIrHm_wcigh-99">
+          <mxGeometry x="-180" width="1340" height="670" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-43" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;Struct&lt;/i&gt;&lt;/span&gt;&lt;br&gt;CategoriesCoordinator :&amp;nbsp; BaseCoordinator, CategoryListModuleOutput" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="PJumSltDaIIrHm_wcigh-99">
+          <mxGeometry x="-130" y="60" width="460" height="280" as="geometry">
+            <mxRectangle x="264" y="130" width="240" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-44" value="let tabBarController: HeartlandTabBarController&lt;br&gt;let navigationController: HeartlandNavigationController" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PJumSltDaIIrHm_wcigh-43">
+          <mxGeometry y="60" width="460" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-45" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="PJumSltDaIIrHm_wcigh-43">
+          <mxGeometry y="100" width="460" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-50" value="func start() {&lt;br&gt;&amp;nbsp; ...&lt;br&gt;&amp;nbsp; let view = CategoryListAssembler(output: self).assemble()&lt;br&gt;&amp;nbsp; ...&lt;br&gt;}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PJumSltDaIIrHm_wcigh-43">
+          <mxGeometry y="108" width="460" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-92" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="PJumSltDaIIrHm_wcigh-43">
+          <mxGeometry y="190" width="460" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-93" value="func didSelectCategory(with id: String) {&lt;br&gt;&amp;nbsp; ...&lt;br&gt;&amp;nbsp;&amp;nbsp;ItemsListCoordinator(with: id, navigationController: self.navigationController)&lt;span style=&quot;background-color: initial;&quot;&gt;.start()&lt;/span&gt;&lt;br&gt;&amp;nbsp; ...&lt;br&gt;}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PJumSltDaIIrHm_wcigh-43">
+          <mxGeometry y="198" width="460" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-59" value="" style="group" vertex="1" connectable="0" parent="PJumSltDaIIrHm_wcigh-99">
+          <mxGeometry x="570" y="60" width="360" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-58" value="CategoryListProtocols" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="PJumSltDaIIrHm_wcigh-59">
+          <mxGeometry width="349.09" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-53" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i style=&quot;border-color: var(--border-color);&quot;&gt;Protocol&lt;/i&gt;&lt;br&gt;&lt;b&gt;CategoryListViewOutput&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;func viewDidLoad()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;func didSelect(_ category: CategoryModel)&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="PJumSltDaIIrHm_wcigh-59">
+          <mxGeometry x="21.15" y="130" width="318.85" height="82.8" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-52" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i style=&quot;border-color: var(--border-color);&quot;&gt;Protocol&lt;/i&gt;&lt;br&gt;&lt;b&gt;CategoryListViewInput&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;func updateView(with models: [CategoryModel])&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="PJumSltDaIIrHm_wcigh-59">
+          <mxGeometry x="21.15" y="50" width="318.85" height="69.4" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-61" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;Protocol&lt;/i&gt;&lt;br&gt;&lt;b&gt;CategoryListInteractorInput&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;func requestCategories()&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="PJumSltDaIIrHm_wcigh-59">
+          <mxGeometry x="21.15" y="220" width="318.85" height="69.4" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-62" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;Protocol&lt;/i&gt;&lt;br&gt;&lt;b&gt;CategoryListInteractorOutput&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;func categoriesObtained(_ categories: [CategoryModel])&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="PJumSltDaIIrHm_wcigh-59">
+          <mxGeometry x="21.15" y="300" width="318.85" height="69.4" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-63" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;Protocol&lt;/i&gt;&lt;br&gt;&lt;b&gt;CategoryListModuleOutput&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;func didSelectCategory(with id: String)&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="PJumSltDaIIrHm_wcigh-59">
+          <mxGeometry x="21.15" y="380" width="318.85" height="69.4" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-64" value="&lt;i style=&quot;font-weight: normal;&quot;&gt;Struct&lt;/i&gt;&lt;br&gt;CategoryModel :&amp;nbsp; Codable" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="PJumSltDaIIrHm_wcigh-99">
+          <mxGeometry x="980" y="60" width="160" height="110" as="geometry">
+            <mxRectangle x="264" y="130" width="240" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-65" value="&lt;div&gt;let id: String&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;let title: String&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;let imageName: String&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;let items: [ItemModel]&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PJumSltDaIIrHm_wcigh-64">
+          <mxGeometry y="40" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-70" value="&lt;i style=&quot;font-weight: normal;&quot;&gt;Struct&lt;/i&gt;&lt;br&gt;ItemModel :&amp;nbsp; Codable" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="PJumSltDaIIrHm_wcigh-99">
+          <mxGeometry x="980" y="220" width="160" height="170" as="geometry">
+            <mxRectangle x="264" y="130" width="240" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-71" value="&lt;div&gt;let id: String&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;let title: String&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;let image: String&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;let description: String&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;let price: Double&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;let brand: String&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;let categoryId: String&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;let category: String&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PJumSltDaIIrHm_wcigh-70">
+          <mxGeometry y="40" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-83" value="&lt;i style=&quot;font-weight: normal;&quot;&gt;Struct&lt;/i&gt;&lt;br&gt;CategoryListAssembler :&amp;nbsp; ViewAssemblerProtocol" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="PJumSltDaIIrHm_wcigh-99">
+          <mxGeometry x="-130" y="363" width="590" height="240" as="geometry">
+            <mxRectangle x="264" y="130" width="240" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-84" value="var output: CategoryListModuleOutput?" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PJumSltDaIIrHm_wcigh-83">
+          <mxGeometry y="40" width="590" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-90" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="PJumSltDaIIrHm_wcigh-83">
+          <mxGeometry y="70" width="590" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-91" value="func assemble() -&amp;gt; CategoryListViewController {&lt;br&gt;&amp;nbsp; ...&lt;br&gt;&amp;nbsp; let interactor = CategoryListInteractor(networkService)&lt;div&gt;&amp;nbsp; let viewController = CategoryListViewController()&lt;/div&gt;&lt;div&gt;&amp;nbsp; let presenter = CategoryListPresenter(view: viewController, interactor: interactor, moduleOutput: self.output)&lt;/div&gt;&lt;div&gt;&amp;nbsp; viewController.output = presenter&lt;/div&gt;&lt;div&gt;&amp;nbsp; interactor.output = presenter&lt;/div&gt;&lt;div&gt;&amp;nbsp; return viewController&lt;/div&gt;&amp;nbsp; ...&lt;br&gt;}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PJumSltDaIIrHm_wcigh-83">
+          <mxGeometry y="78" width="590" height="162" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="PJumSltDaIIrHm_wcigh-99" source="PJumSltDaIIrHm_wcigh-63" target="PJumSltDaIIrHm_wcigh-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="PJumSltDaIIrHm_wcigh-99" source="PJumSltDaIIrHm_wcigh-52" target="PJumSltDaIIrHm_wcigh-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="PJumSltDaIIrHm_wcigh-99" source="PJumSltDaIIrHm_wcigh-53" target="PJumSltDaIIrHm_wcigh-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="PJumSltDaIIrHm_wcigh-99" source="PJumSltDaIIrHm_wcigh-61" target="PJumSltDaIIrHm_wcigh-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="PJumSltDaIIrHm_wcigh-99" source="PJumSltDaIIrHm_wcigh-62" target="PJumSltDaIIrHm_wcigh-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="PJumSltDaIIrHm_wcigh-99" source="PJumSltDaIIrHm_wcigh-63" target="PJumSltDaIIrHm_wcigh-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="PJumSltDaIIrHm_wcigh-99" source="PJumSltDaIIrHm_wcigh-64" target="PJumSltDaIIrHm_wcigh-70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="PJumSltDaIIrHm_wcigh-99" source="PJumSltDaIIrHm_wcigh-84" target="PJumSltDaIIrHm_wcigh-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-95" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="PJumSltDaIIrHm_wcigh-99" source="PJumSltDaIIrHm_wcigh-50" target="PJumSltDaIIrHm_wcigh-91">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-101" value="Items List" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="-1450" y="1000" width="1280" height="630" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-102" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;Struct&lt;/i&gt;&lt;/span&gt;&lt;br&gt;CategoriesCoordinator :&amp;nbsp; BaseCoordinator, ItemsListModuleOutput" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1400" y="1040" width="470" height="280" as="geometry">
+            <mxRectangle x="264" y="130" width="240" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-103" value="let tabBarController: HeartlandTabBarController&lt;br&gt;let navigationController: HeartlandNavigationController" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PJumSltDaIIrHm_wcigh-102">
+          <mxGeometry y="60" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-104" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="PJumSltDaIIrHm_wcigh-102">
+          <mxGeometry y="100" width="470" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-105" value="func start() {&lt;br&gt;&amp;nbsp; ...&lt;br&gt;&amp;nbsp; let view = ItemsListAssembler(output: self, categoryId: self.categoryId).assemble()&lt;br&gt;&amp;nbsp; ...&lt;br&gt;}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PJumSltDaIIrHm_wcigh-102">
+          <mxGeometry y="108" width="470" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-106" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="PJumSltDaIIrHm_wcigh-102">
+          <mxGeometry y="190" width="470" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-107" value="func didSelectItem(with id: String) {&lt;br&gt;&amp;nbsp; ...&lt;br&gt;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;ItemDetailsCoordinator(with: id, navigationController: self.navigationController).start()&lt;/span&gt;&lt;br&gt;&amp;nbsp; ...&lt;br&gt;}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PJumSltDaIIrHm_wcigh-102">
+          <mxGeometry y="198" width="470" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-116" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="-880" y="1080" width="470" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-110" value="ItemsListProtocol" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="PJumSltDaIIrHm_wcigh-116">
+          <mxGeometry width="470" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-111" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i style=&quot;border-color: var(--border-color);&quot;&gt;Protocol&lt;/i&gt;&lt;br&gt;&lt;b&gt;ItemsListViewOutput&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;func viewDidLoad()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;func didTapItem(_ item: ItemModel)&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="PJumSltDaIIrHm_wcigh-116">
+          <mxGeometry x="27.029999999999973" y="130" width="422.98" height="82.8" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-112" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i style=&quot;border-color: var(--border-color);&quot;&gt;Protocol&lt;/i&gt;&lt;br&gt;&lt;b&gt;ItemListViewInput&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;func update(with title: String, items: [ItemModel])&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="PJumSltDaIIrHm_wcigh-116">
+          <mxGeometry x="27.029999999999973" y="50" width="422.98" height="69.4" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-113" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;Protocol&lt;/i&gt;&lt;br&gt;&lt;b&gt;ItemsListInteractorInput&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;func requestCategoryData(with id: String)&lt;br&gt;func trackViewCategoryEvent(_ categoryId: String, categoryName: String)&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="PJumSltDaIIrHm_wcigh-116">
+          <mxGeometry x="27.019999999999982" y="220" width="422.98" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-114" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;Protocol&lt;/i&gt;&lt;br&gt;&lt;b&gt;ItemsListInteractorOutput&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;func didObtainCategory(_ categoryId: String, items: [ItemModel], title: String)&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="PJumSltDaIIrHm_wcigh-116">
+          <mxGeometry x="27.029999999999973" y="310" width="422.98" height="69.4" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-115" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;Protocol&lt;/i&gt;&lt;br&gt;&lt;b&gt;ItemsListModuleOutput&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;func didSelectItem(with id: String)&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="PJumSltDaIIrHm_wcigh-116">
+          <mxGeometry x="27.029999999999973" y="390" width="422.98" height="69.4" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-117" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.107;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" edge="1" parent="1" source="PJumSltDaIIrHm_wcigh-115" target="PJumSltDaIIrHm_wcigh-102">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-118" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJumSltDaIIrHm_wcigh-93" target="PJumSltDaIIrHm_wcigh-105">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1510" y="1240" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-1630" y="549" />
+              <mxPoint x="-1630" y="1189" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-119" value="&lt;i style=&quot;font-weight: normal;&quot;&gt;Struct&lt;/i&gt;&lt;br&gt;CategoryListAssembler :&amp;nbsp; ViewAssemblerProtocol" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1350" y="1400" width="300" height="110" as="geometry">
+            <mxRectangle x="264" y="130" width="240" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-120" value="var output: CategoryListModuleOutput?" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PJumSltDaIIrHm_wcigh-119">
+          <mxGeometry y="40" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-121" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="PJumSltDaIIrHm_wcigh-119">
+          <mxGeometry y="70" width="300" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-122" value="func assemble() -&amp;gt; CategoryListViewController" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PJumSltDaIIrHm_wcigh-119">
+          <mxGeometry y="78" width="300" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="PJumSltDaIIrHm_wcigh-125" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.002;entryY=0.162;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="PJumSltDaIIrHm_wcigh-36" target="PJumSltDaIIrHm_wcigh-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
